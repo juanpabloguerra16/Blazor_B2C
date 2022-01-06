@@ -65,7 +65,7 @@ namespace BlazorApp_B2C
                 new RewriteOptions().Add(
                     context =>
                     {
-                        if(context.HttpContext.Request.Path == "/MicrosoftIdentity/Account/SignOut")
+                        if(context.HttpContext.Request.Path == "/MicrosoftIdentity/Account/SignedOut")
                         {
                             context.HttpContext.Response.Redirect(location:"/");
                         }
